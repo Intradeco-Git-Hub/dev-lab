@@ -2,7 +2,7 @@ import functions_framework
 
 # Triggered by a change in a storage bucket
 @functions_framework.cloud_event
-def process_files(cloud_event):
+def main(cloud_event):
     """Triggered by a change in a storage bucket."""
     data = cloud_event.data
     bucket_name = data['bucket']
